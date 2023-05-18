@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   # root "articles#index"
   resources :users, only: %i[create]
 
+  get 'ranking/actual', to: 'rankings#actual'
+
   post 'auth/login', to: 'authentication#login'
 end

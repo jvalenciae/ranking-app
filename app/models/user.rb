@@ -6,4 +6,8 @@ class User < ApplicationRecord
   validates :uuid, presence: true, uniqueness: true
   validates :token, presence: true
   validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
+
+  def total_distance_traveled
+    rankings.sum(&:distance_traveled)
+  end
 end

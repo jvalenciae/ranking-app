@@ -51,6 +51,7 @@ gem 'bootsnap', require: false
 # gem 'image_processing', '~> 1.2'
 
 group :development, :test do
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]  
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[ mri mingw x64_mingw ]
   # indented print of Ruby and Rails Objs and Arrays by using `ap something
@@ -110,7 +111,7 @@ group :test do
 end
 
 # Use Sass to process CSS
-gem "sassc-rails"
+gem 'sassc-rails'
 
 # JWT for Authentication
 gem 'jwt'
@@ -123,3 +124,6 @@ gem 'oj'
 
 # Generate fake data
 gem 'faker'
+
+# Pagination
+gem 'kaminari'
