@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   resources :users, only: %i[create]
 
   get 'ranking/actual', to: 'rankings#actual'
+  get 'ranking/by_month', to: 'rankings#by_month'
+  post 'ranking/record', to: 'rankings#record'
 
   post 'auth/login', to: 'authentication#login'
 end
