@@ -111,3 +111,12 @@ end
 
 # Use Sass to process CSS
 gem "sassc-rails"
+
+# JWT for Authentication
+gem 'jwt'
+
+# Json generator
+gem 'rabl'
+
+# Json Parser
+gem 'oj'
