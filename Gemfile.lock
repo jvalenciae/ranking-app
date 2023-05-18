@@ -108,6 +108,8 @@ GEM
       railties (>= 3.2)
     erubi (1.12.0)
     erubis (2.7.0)
+    faker (3.2.0)
+      i18n (>= 1.8.11, < 2)
     fasterer (0.10.1)
       colorize (~> 0.7)
       ruby_parser (>= 3.19.1)
@@ -343,6 +345,7 @@ DEPENDENCIES
   database_consistency (~> 1.1, >= 1.1.15)
   debug
   dotenv-rails
+  faker
   fasterer (~> 0.10.0)
   importmap-rails
   jbuilder

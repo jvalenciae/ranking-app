@@ -120,3 +120,6 @@ gem 'rabl'
 
 # Json Parser
 gem 'oj'
+
+# Generate fake data
+gem 'faker'
